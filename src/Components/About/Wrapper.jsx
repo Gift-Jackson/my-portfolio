@@ -28,6 +28,8 @@ const Wrapper = () => {
             landscape.
           </p>
 
+          <p>Education: BSC. in Petroleum Engineering</p>
+
           <button className={styles.btn}>
             Let&apos;s Connect &nbsp;{" "}
             <i className="fa-solid fa-people-arrows"></i>
