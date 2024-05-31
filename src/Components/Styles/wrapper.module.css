@@ -31,6 +31,9 @@
     color: var(--font-color-light);
     font-size: small;
 }
+.wrapper .edu{
+    margin-bottom: 1.5em;
+}
 
 .wrapper .btn {
     margin-block-start: 1em;
@@ -80,5 +83,8 @@ border: 1px solid var(--border);
     }
     .wrapper .btn{
         margin-top: 2em;
+    }
+    .wrapper .edu{
+        margin-bottom: unset;
     }
 }
