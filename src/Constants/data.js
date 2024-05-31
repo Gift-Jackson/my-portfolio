@@ -53,3 +53,22 @@ export const social_media = [
         iconClass: 'fa-brands fa-whatsapp'
     }
 ];
+
+export const data = [
+    {
+        title: "Completed Projects",
+        count: "50+"
+    },
+    {
+        title: "Years of Experience",
+        count: "2+"
+    },
+    {
+        title: "Happy Clients",
+        count: "12+"
+    },
+    {
+        title: "Collaborations",
+        count: "5+"
+    },
+]

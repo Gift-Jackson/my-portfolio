@@ -22,7 +22,7 @@ const Wrapper = () => {
             Hello, I&apos;m Gift Jackson, a passionate and dedicated Frontend
             Developer with over 2 years of experience. With a strong foundation
             in HTML, CSS, and JavaScript, I specialize in creating dynamic and
-            responsive web applications. <br />  My expertise extends to modern
+            responsive web applications. <br /> <br />  My expertise extends to modern
             technologies and frameworks, ensuring that I can deliver
             cutting-edge solutions that meet the needs of today&apos;s digital
             landscape.

@@ -21,7 +21,7 @@
 .header nav{
     display: flex;
     align-items: center;
-    width: min(95%, 1024px);
+    width: min(90%, 1024px);
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -107,7 +107,7 @@
     background-color: rgba(0,0,0,.5);
 }
 
-@media (max-width:600px) {
+@media (max-width:650px) {
     .header nav ul{
         display: none;
     }

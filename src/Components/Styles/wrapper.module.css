@@ -29,7 +29,6 @@
 .wrapper p{
     margin-top: 1em;
     color: var(--font-color-light);
-    text-align: justify;
     font-size: small;
 }
 
@@ -56,7 +55,7 @@ border: 1px solid var(--border);
     margin-block-start: 1em;
     align-self: flex-start;
     margin-top: auto;
-    filter: grayscale();
+    /* filter: grayscale(); */
 }
 .grid >div:hover img{
     filter: unset;

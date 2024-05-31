@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import "../Styles/global.css";
 import Transition from "./Transition";
+import Footer from "./Footer";
 const Layout = () => {
   return (
     <>
@@ -10,7 +11,8 @@ const Layout = () => {
           <main>
             <Outlet />
           </main>
-        </Transition>
+      </Transition>
+      <Footer/>
     </>
   );
 };

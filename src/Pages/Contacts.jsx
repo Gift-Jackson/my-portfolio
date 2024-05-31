@@ -5,7 +5,7 @@ const Contacts = () => {
   return (
       <>
           <Title title="Let's talk" icon="perm_phone_msg" subtitle="I'm available for immediate employment or quick task." />
-          <ContactWrapper/>
+      <ContactWrapper />
       </>
   )
 }

@@ -1,5 +1,5 @@
 main{
-    width: min(95%, 1024px);
+    width: min(90%, 1024px);
     margin: 0 auto;
     padding-bottom: 4em;
 }
@@ -52,5 +52,13 @@ main{
     justify-content: flex-end;
 }
 .mark{
-    color: mediumseagreen;
+    color: var(--primary-color);
+}
+.footer{
+    text-align: center;
+    margin: 3em 0;
+    padding-top: 2em;
+    border-top: 1px solid var(--border);
+    color: var(--font-color-light);
+    font-size: small;
 }

@@ -1,4 +1,4 @@
-import Button from "../Components/Global/Button"
+import ForwardButton from "../Components/Global/ForwardButton"
 import Hero from "../Components/Home/Hero"
 import Profile from "../Components/Home/Profile"
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <Profile />
       <Hero />
-      <Button name="About" path="/about"/>
+      <ForwardButton name="About Me" path="/about"/>
     </>
   )
 }
