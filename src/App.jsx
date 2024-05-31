@@ -13,6 +13,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />
+            <Route path="*" element={<h1>404 - Page not ready yet!</h1>} />
           </Route>
         </Routes>
     </AnimatePresence>

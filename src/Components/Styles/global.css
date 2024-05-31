@@ -22,6 +22,11 @@ main{
     transition: transform 0.2s ease-in-out;
 }
 
+#mobile .nav-link::before{
+    background-color: var(--white);
+}
+
+
 .nav-link.active::before,
 .nav-link:hover::before {
     transform: scaleX(1);
@@ -45,4 +50,7 @@ main{
 .to-right{
     display: flex;
     justify-content: flex-end;
+}
+.mark{
+    color: mediumseagreen;
 }

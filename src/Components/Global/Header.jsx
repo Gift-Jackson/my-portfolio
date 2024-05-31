@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { nav } from "../../Constants/data";
 import styles from "../Styles/header.module.css";
 import MobileNav from "./MobileNav";
@@ -11,15 +11,15 @@ const Header = () => {
     setShow((prev) => !prev);
   };
 
-  const {toggleTheme, darkMode}= useTheme()
+  const { toggleTheme, darkMode } = useTheme();
 
   return (
     <>
       <header className={styles.header}>
         <nav>
-          <Link>
-            <h2 className={styles.brand}>Portfolio.</h2>
-          </Link>
+          <a href="/">
+            <h2 className={styles.brand}>Portfolio<span className="mark">.</span></h2>
+          </a>
 
           <div className={styles.right}>
             <ul>
@@ -33,7 +33,7 @@ const Header = () => {
             </ul>
             <button className={styles.theme} onClick={toggleTheme}>
               <span className="material-symbols-outlined theme-icon">
-                {darkMode? "light_mode" : "dark_mode"}
+                {darkMode ? "light_mode" : "dark_mode"}
               </span>
             </button>
             <button className={styles.menu} onClick={toggleMenu}>

@@ -46,11 +46,10 @@
     border: 1px solid var(--border);
     height: 40px;
     width: 40px;
-    transition: .1s ease-in-out;
 }
 .theme:focus-within{
     outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
+    outline-offset: 1px;
 }
 .theme span{
     font-size: 1.5em;
@@ -104,6 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--white);
     background-color: rgba(0,0,0,.5);
 }
 

@@ -25,6 +25,7 @@ const MobileNav = ({ toggleMenu}) => {
               initial="hidden"
               animate="visible"
               exit="exit"
+              id="mobile"
               className={styles.container}>
         <div className={styles.close} onClick={toggleMenu}>
           <span className="material-symbols-outlined">close</span>
