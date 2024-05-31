@@ -1,0 +1,25 @@
+.container{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: .75em;
+}
+
+.container p{
+    color: var(--font-color-light);
+}
+
+.img_box{
+    background-color: var(--primary-color);
+    padding: 1em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+.img_box img{
+    height: 100%;
+}

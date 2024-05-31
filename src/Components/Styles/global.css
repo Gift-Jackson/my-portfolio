@@ -1,0 +1,48 @@
+main{
+    width: min(95%, 1024px);
+    margin: 0 auto;
+    padding-bottom: 4em;
+}
+
+.nav-link {
+    position: relative;
+    color: var(--font-color-light);
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    background-color: var(--font-color);
+    left: 0;
+    bottom: -.3em;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link.active::before,
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+.button{
+    margin-top: 2em;
+    font-size: 1.5em;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    background-color: var(--font-color);
+    left: 0;
+    bottom: -.3em;
+}
+.to-right{
+    display: flex;
+    justify-content: flex-end;
+}

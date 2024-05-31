@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: var(--font-1);
+  cursor: default;
+  user-select: none;
+}
+
+:root {
+  --primary-color: mediumseagreen;
+  --secondary-color: #f5f6f7;
+  --light-bg: #fefefe;
+  --medium-bg: #f5f6f7;
+  --font-color: #4a4a4a;
+  --font-color-light: #777;
+  --border: #eee;
+  --border-focus: #ddd;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  --white: #fefefe;
+  --font-1: "Outfit", system-ui;
+  --font-2: "Jaro", system-ui;
+
+  --green: mediumseagreen;
+  --blue: dodgerblue;
+  --orange: orange;
+  --crimson:crimson;
+  --purple:mediumslateblue;
+  --pink: #FE34B9;
+}
+
+.dark {
+  --primary-color:  mediumseagreen;
+  --secondary-color: #17181f;
+  --light-bg: #20212d;
+  --medium-bg: #30313d;
+  --font-color: #fefefe;
+  --font-color-light: #90919d;
+  --border: #30313d;
+  --border-focus: #70717d;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  --white: #fefefe;
+  --font-1: "Outfit", sans-serif;
+  --font-2: "Jaro", system-ui;
+}
+
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+*::-webkit-scrollbar {
+  height: .5rem;
+  width: 4px;
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  color: var(--font-color);
+}
+
+i,
+span,
+a {
+  color: inherit;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:active {
+  filter: brightness(120%);
+}
+
+body{
+  background-color: var(--secondary-color);
+}

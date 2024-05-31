@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 50%;
+    background-color: var(--border);
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    width: min(95%, 1024px);
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.brand{
+    /* font-family: var(--font-2); */
+    letter-spacing: 1px;
+    /* color: var(--primary-color); */
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap:3em;
+}
+.right ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+}
+.theme{
+    background-color: var(--light-bg);
+    border: 1px solid var(--border);
+    height: 40px;
+    width: 40px;
+    transition: .1s ease-in-out;
+}
+.theme:focus-within{
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+.theme span{
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.menu{
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--border);
+    background-color: var(--light-bg);
+    display: none;
+}
+.menu span{
+    font-size: 1.5em;
+}
+
+
+
+/* Mobile nav */
+.container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100dvh;
+    background-color: var(--primary-color);
+    width: 70%;
+    padding: 4em;
+    z-index: 99;
+    display: none;
+    transform-origin: right;
+}
+.container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+.container ul a{
+    font-size: 1.5em;
+    color: var(--white);
+   
+}
+
+.close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+}
+
+@media (max-width:600px) {
+    .header nav ul{
+        display: none;
+    }
+    
+    .menu{
+        display: flex;
+    }
+    .right{
+        gap: 1em;
+    }
+    .theme{
+        background-color: transparent;
+        border: 0;
+    }
+    .container{
+        display: block;
+    }
+
+}
