@@ -8,20 +8,22 @@
     flex: 1;
     background-color: var(--light-bg);
     border: 1px solid var(--border);
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .05);
     padding: 1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .container>div:nth-of-type(1) {
     display: flex;
     flex-direction: column;
 }
-.wrapper h3{
+
+.wrapper h3 {
     border-bottom: 1px solid var(--border);
     padding-bottom: .5em;
     color: var(--primary-color);
 }
-.wrapper p{
+
+.wrapper p {
     margin-top: 1em;
     color: var(--font-color-light);
 }
@@ -34,51 +36,39 @@
     align-items: center;
     gap: 1em;
 }
-.btns button{
+
+.btns button {
     flex: 1;
 }
-.wrapper ul{
-    list-style: none;
 
-    gap: 1em; 
+.wrapper ul {
+    list-style: none;
+    gap: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.links i, .links span{
-    color: var(--font-color-light);
-}
-.links:hover i, .links:hover span{
-    color: var(--font-color);
-    filter: drop-shadow(0 0 10px var(--font-color));
-}
-.links a{
-    display: flex;
-    justify-content: space-between;
-}
-.links a > div:nth-of-type(1){
-    display: flex;
-    gap: .5em;
-}
 
-.btn_1{
+
+.btn_1 {
     background-color: var(--light-bg);
     border: 0;
     padding: 0;
 }
 
-.btn_2{
+.btn_2 {
     padding: 1em 2em;
-background-color: var(--medium-bg);
-border: 1px solid var(--border);
+    background-color: var(--medium-bg);
+    border: 1px solid var(--border);
 }
 
 
-.wrapper:nth-last-of-type(1){
+.wrapper:nth-last-of-type(1) {
     background-color: transparent;
     padding: unset;
     border: unset;
 }
-.item{
+
+.item {
     display: flex;
     align-items: center;
     background-color: var(--light-bg);
@@ -86,26 +76,31 @@ border: 1px solid var(--border);
     flex-direction: column;
     gap: 1em;
     border: 1px solid var(--border);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
-.item div:nth-of-type(1){
+
+.item div:nth-of-type(1) {
     flex: 1;
     font-size: 2.5em;
     color: var(--primary-color);
     font-family: var(--font-2);
 }
-.item div:nth-of-type(2){
+
+.item div:nth-of-type(2) {
     flex: 3;
 }
 
 @media (max-width:771px) {
-    .container{
+    .container {
         flex-direction: column;
         gap: 1em;
     }
-    .wrapper .btns{
+
+    .wrapper .btns {
         margin-top: 2em;
     }
-    .item div:nth-of-type(1){
-        font-size:2em ;
+
+    .item div:nth-of-type(1) {
+        font-size: 2em;
     }
 }

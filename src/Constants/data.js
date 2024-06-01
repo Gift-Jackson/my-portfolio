@@ -8,8 +8,8 @@ export const nav = [
         name: 'About',
     },
     {
-        path: '/portfolio',
-        name: 'Portfolio',
+        path: '/projects',
+        name: 'Projects',
     },
     {
         path: '/blog',
@@ -70,5 +70,33 @@ export const data = [
     {
         title: "Collaborations",
         count: "5+"
+    },
+]
+
+
+export const projects = [
+    {
+        image: "../assets/Screenshot 2024-05-25 231805.png",
+        title: "Bloggie",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
+        stack: ["HTML", "CSS", "Vanillajs", "Axios"]
+    },
+    {
+        image: "../assets/Screenshot 2024-05-25 231805.png",
+        title: "Bloggie",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
+        stack: ["HTML", "CSS", "Vanillajs", "Axios"]
+    },
+    {
+        image: "../assets/Screenshot 2024-05-25 231805.png",
+        title: "Bloggie",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
+        stack: ["HTML", "CSS", "Vanillajs", "Axios"]
+    },
+    {
+        image: "../assets/Screenshot 2024-05-25 231805.png",
+        title: "Bloggie",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
+        stack: ["HTML", "CSS", "Vanillajs", "Axios"]
     },
 ]

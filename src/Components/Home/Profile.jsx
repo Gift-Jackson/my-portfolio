@@ -7,10 +7,15 @@ const Profile = () => {
     initial: {
       opacity: 0,
       x: -100,
+      
     },
     animate: {
       opacity: 1,
       x: 0,
+      transition: {
+        delay: 0.5,
+        duration: 0.5
+      }
     },
     exit: {
       opacity: 0,
@@ -20,7 +25,10 @@ const Profile = () => {
   return (
     <div className="center">
       <motion.div
-      variants={TitleVar}
+        variants={TitleVar}
+        transition={{
+          duration: 0.5
+        }}
         className={styles.container}>
         <div className={styles.img_box}>
           <img src={logo} alt="Profile Logo" />

@@ -1,6 +1,59 @@
+import { useState } from "react";
 import { social_media } from "../../Constants/data";
 import styles from "../Styles/contacts.module.css";
+import toast from "react-hot-toast";
+import axios from "axios";
+
+const form_url = "https://submit-form.com/IQCVIiPKz";
 const ContactWrapper = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    validateForm();
+  };
+
+  const validateForm = () => {
+    if (!formData.name) {
+      toast.error("Name is required!");
+    } else if (!formData.email) {
+      toast.error("E-mail is required!");
+    } else if (!formData.message) {
+      toast.error("E-mail is required!");
+    } else {
+      sendForm();
+    }
+  };
+
+  const sendForm = () => {
+    axios
+      .post(form_url, {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      })
+      .then(function (response) {
+        console.log(response);
+        toast.success("Form Submitted!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
   return (
     <>
       <div className={styles.container}>
@@ -10,7 +63,7 @@ const ContactWrapper = () => {
             Form
           </h3>
 
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.grp}>
               <label htmlFor="name">
                 Name <span className={styles.red}>*</span>
@@ -20,7 +73,8 @@ const ContactWrapper = () => {
                 name="name"
                 id="name"
                 placeholder="What's your name?"
-                required
+                value={formData.name || ""}
+                onChange={handleChange}
                 autoComplete="off"
               />
             </div>
@@ -33,8 +87,9 @@ const ContactWrapper = () => {
                 name="email"
                 id="email"
                 placeholder="And your e-mail address..."
-                required
                 autoComplete="off"
+                value={formData.email || ""}
+                onChange={handleChange}
               />
             </div>
             <div className={styles.grp}>
@@ -46,8 +101,9 @@ const ContactWrapper = () => {
                 id="message"
                 rows="7"
                 placeholder="A little gist about the job..."
-                required
                 autoComplete="off"
+                value={formData.message || ""}
+                onChange={handleChange}
               ></textarea>
             </div>
             <button type="submit">

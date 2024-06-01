@@ -15,7 +15,8 @@ const Transition = ({ children }) => {
       opacity: 0,
       y: 100,
       transition: {
-        delay: 0.2,
+        delay: 0.5,
+        duration: 0.5
       },
     },
   };
@@ -26,6 +27,9 @@ const Transition = ({ children }) => {
       initial="initial"
       animate="animate"
       exit="exit"
+      transition={{
+        duration: 0.5
+      }}
     >
       {children}
     </motion.div>

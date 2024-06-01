@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types"
-const ForwardButton = ({path, name}) => {
+const ForwardButton = ({path, name="Button"}) => {
   return (
     <>
       <Link to={path} className="to-right">
