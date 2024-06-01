@@ -36,7 +36,7 @@ const Profile = () => {
           <img src={logo} alt="Profile Logo" />
         </div>
         <div className={styles.content}>
-          <h3>Gift Jackson</h3>
+          <h2>Gift Jackson</h2>
           <p><ReactTyped
               strings={[
                 "Frontend Web Developer",

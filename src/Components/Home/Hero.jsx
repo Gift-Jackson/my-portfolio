@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styles from "../Styles/hero.module.css";
 import { data } from "../../Constants/data";
 import { motion } from "framer-motion";
@@ -16,11 +15,12 @@ const Hero = () => {
             prompted to.😇
           </p>
           <div className={styles.btns}>
-            <Link>
+            <a href="https://drive.google.com/file/d/1WI4-s22xYquKNqPkWsL6Zsz8jmtvNWf-/view?usp=sharing" target="_blank" download>
               <button className={styles.btn_2}>
                 <i className="fa-solid fa-download"></i> &nbsp; Download CV
               </button>
-            </Link>
+            </a>
+
             <a href="https://github.com/Gift-Jackson" target="_blank">
               <button className={styles.btn_1}>
                 <span>See Github</span> &nbsp;
@@ -32,9 +32,7 @@ const Hero = () => {
         <div className={styles.wrapper}>
           <ul>
             {data.map((item, index) => (
-              <motion.li
-              
-                className={styles.item} key={index}>
+              <motion.li className={styles.item} key={index}>
                 <div>{item.count}</div>
                 <div>{item.title} </div>
               </motion.li>
