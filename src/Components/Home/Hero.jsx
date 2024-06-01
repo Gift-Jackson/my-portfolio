@@ -15,7 +15,7 @@ const Hero = () => {
             prompted to.😇
           </p>
           <div className={styles.btns}>
-            <a href="https://drive.google.com/file/d/1WI4-s22xYquKNqPkWsL6Zsz8jmtvNWf-/view?usp=sharing" target="_blank" download>
+            <a href="https://drive.google.com/file/d/12IGVHIE6KCNvxD9bkKIoWuKt_MzR-yqo/view?usp=sharing" target="_blank" download>
               <button className={styles.btn_2}>
                 <i className="fa-solid fa-file-pdf"></i> &nbsp; View CV
               </button>
