@@ -17,7 +17,7 @@ const Hero = () => {
           <div className={styles.btns}>
             <a href="https://drive.google.com/file/d/1WI4-s22xYquKNqPkWsL6Zsz8jmtvNWf-/view?usp=sharing" target="_blank" download>
               <button className={styles.btn_2}>
-                <i className="fa-solid fa-download"></i> &nbsp; Download CV
+                <i className="fa-solid fa-file-pdf"></i> &nbsp; View CV
               </button>
             </a>
 
