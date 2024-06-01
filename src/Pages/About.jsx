@@ -3,6 +3,7 @@ import ForwardButton from "../Components/Global/ForwardButton";
 import Title from "../Components/Global/Title";
 
 const About = () => {
+  document.title = "About Me"
   return (
     <>
       <Title

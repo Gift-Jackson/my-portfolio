@@ -9,6 +9,8 @@
 .item{
     background-color: var(--light-bg);
     box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    border-radius: .5em;
+    overflow: hidden;
 }
 
 .item img{
@@ -38,6 +40,7 @@
     padding: .5em 1em;
     font-size: small;
     color: var(--font-color-light);
+    border-radius: 1em;
 }
 .btns{
     margin-top: 2em;
@@ -47,11 +50,13 @@
 }
 .btns a{
     padding: .5em 1em;
-    color: var(--primary-color);
+    border-radius: .3em;
 }
 .btn_1{
-    background-color: var(--medium-bg);
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 .btn_2{
+    background-color: var(--medium-bg);
     border: 1px solid var(--border);
 }

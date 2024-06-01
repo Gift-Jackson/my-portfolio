@@ -6,6 +6,7 @@ import axios from "axios";
 
 const form_url = "https://submit-form.com/IQCVIiPKz";
 const ContactWrapper = () => {
+  const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,13 +29,14 @@ const ContactWrapper = () => {
     } else if (!formData.email) {
       toast.error("E-mail is required!");
     } else if (!formData.message) {
-      toast.error("E-mail is required!");
+      toast.error("Message is required!");
     } else {
       sendForm();
     }
   };
 
   const sendForm = () => {
+    setLoading(false);
     axios
       .post(form_url, {
         name: formData.name,
@@ -49,9 +51,11 @@ const ContactWrapper = () => {
           email: "",
           message: "",
         });
+        setLoading(true);
       })
       .catch(function (error) {
         console.log(error);
+        toast.error(error.message)
       });
   };
   return (
@@ -107,7 +111,15 @@ const ContactWrapper = () => {
               ></textarea>
             </div>
             <button type="submit">
-              Send &nbsp; <i className="fa-regular fa-paper-plane"></i>
+              {loading ? (
+                <>
+                  Send &nbsp; <i className="fa-regular fa-paper-plane"></i>
+                </>
+              ) : (
+                <>
+                  Sending &nbsp; <i className="fa-regular fa-clock"></i>
+                </>
+              )}
             </button>
           </form>
         </div>

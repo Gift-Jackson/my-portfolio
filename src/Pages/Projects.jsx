@@ -3,6 +3,7 @@ import Title from "../Components/Global/Title"
 import ProjectWrapper from "../Components/Projects/ProjectWrapper"
 
 const Projects = () => {
+    document.title = "My Projects"
   return (
       <>
           <Title title="Projects" subtitle="Some cool projects I've worked on..." />
