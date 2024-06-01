@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "../Styles/hero.module.css";
 import { data } from "../../Constants/data";
-
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
@@ -30,16 +30,14 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.wrapper}>
-          {/* <h3>
-            <i className="fa-solid fa-square-share-nodes"></i>&nbsp; Statistics
-            
-          </h3> */}
           <ul>
             {data.map((item, index) => (
-              <li className={styles.item} key={index}>
+              <motion.li
+              
+                className={styles.item} key={index}>
                 <div>{item.count}</div>
                 <div>{item.title} </div>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>

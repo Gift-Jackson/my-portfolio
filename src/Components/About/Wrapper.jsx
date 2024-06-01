@@ -6,10 +6,12 @@ import javascript from "../../assets/js.png";
 import react from "../../assets/atom.png";
 import node from "../../assets/nodejs.svg";
 import figma from "../../assets/figma.png";
+import appwrite from "../../assets/appwrite.png";
+import firebase from "../../assets/firebase.png";
+import ts from "../../assets/ts.png"
 import vs from "../../assets/Visual_Studio_Code_1.35_icon.svg.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import github from "../../assets/github-mark.png"
 
 const Wrapper = () => {
   return (
@@ -84,6 +86,15 @@ const Wrapper = () => {
             <div>
               <motion.img
                 whileHover={{ scale: 1.2 }}
+                src={ts}
+                height={50}
+                alt="TypeScript logo"
+              />
+              <p>TypeScript</p>
+            </div>
+            <div>
+              <motion.img
+                whileHover={{ scale: 1.2 }}
                 src={tailwind}
                 height={40}
                 alt="tailwind logo"
@@ -116,6 +127,24 @@ const Wrapper = () => {
                 alt="Figma logo"
               />
               <p>Figma</p>
+            </div>
+            <div>
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                src={appwrite}
+                height={50}
+                alt="AppWrite logo"
+              />
+              <p>AppWrite</p>
+            </div>
+            <div>
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                src={firebase}
+                height={50}
+                alt="Firebase logo"
+              />
+              <p>Firebase</p>
             </div>
           </div>
         </div>

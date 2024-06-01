@@ -10,6 +10,7 @@
   font-family: var(--font-1);
   cursor: default;
   user-select: none;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 :root {

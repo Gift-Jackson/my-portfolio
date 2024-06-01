@@ -8,7 +8,7 @@
     flex: 1;
     background-color: var(--light-bg);
     border: 1px solid var(--border);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     padding: 1em;
     display: flex;
 }
@@ -17,21 +17,28 @@
     display: flex;
     flex-direction: column;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: column;
 }
-.wrapper h3{
+.wrapper:nth-of-type(1){
+    max-height: 280px;
+}
+
+.wrapper h3 {
     border-bottom: 1px solid var(--border);
     padding-bottom: .5em;
     color: var(--primary-color);
 }
-.wrapper p{
+
+.wrapper p {
     margin-top: 1em;
     color: var(--font-color-light);
     font-size: small;
 }
-.wrapper .edu{
+
+.wrapper .edu {
     margin-bottom: 1.5em;
 }
 
@@ -39,31 +46,31 @@
     margin-block-start: 1em;
     align-self: flex-start;
     margin-top: auto;
-    display: flex;
-    align-items: center;
-    gap: 1em;
     padding: .85em 2em;
-background-color: var(--medium-bg);
-border: 1px solid var(--border);
+    background-color: var(--medium-bg);
+    border: 1px solid var(--border);
 }
 
-.grid{
+.grid {
     display: grid;
     gap: 1em;
     margin-top: .5em;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 }
-.grid >div img{
+
+.grid>div img {
     margin: auto;
     margin-block-start: 1em;
     align-self: flex-start;
     margin-top: auto;
     /* filter: grayscale(); */
 }
-.grid >div:hover img{
+
+.grid>div:hover img {
     filter: unset;
 }
-.grid >div{
+
+.grid>div {
     /* background-color: var(--medium-bg); */
     text-align: center;
     display: flex;
@@ -72,19 +79,25 @@ border: 1px solid var(--border);
     flex-direction: column;
     padding: .5em;
 }
-.grid p{
+
+.grid p {
     font-size: small;
 }
 
 @media (max-width:771px) {
-    .container{
+    .container {
         flex-direction: column;
         gap: 1em;
     }
-    .wrapper .btn{
+
+    .wrapper .btn {
         margin-top: 2em;
     }
-    .wrapper .edu{
+
+    .wrapper .edu {
         margin-bottom: unset;
+    }
+    .wrapper:nth-of-type(1){
+        max-height: unset;
     }
 }

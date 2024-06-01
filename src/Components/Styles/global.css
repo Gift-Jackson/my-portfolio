@@ -14,7 +14,7 @@ main{
     position: absolute;
     height: 2px;
     width: 70%;
-    background-color: var(--font-color);
+    background-color: var(--primary-color);
     left: 0;
     bottom: -.3em;
     transform-origin: left;

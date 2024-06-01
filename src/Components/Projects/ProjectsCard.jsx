@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
 import styles from "../Styles/projects.module.css"
-
+import { motion } from "framer-motion";
 const ProjectsCard = ({ image, title, description, stack, live_link, github }) => {
   return (
-    <li className={styles.item}>
+      <motion.li
+      
+          className={styles.item}>
       <img src={image} alt={title} />
       <div className={styles.body}>
           <h3>{title}</h3>
@@ -22,7 +24,7 @@ const ProjectsCard = ({ image, title, description, stack, live_link, github }) =
                   </a>}
               </div>
       </div>
-    </li>
+    </motion.li>
   );
 };
 

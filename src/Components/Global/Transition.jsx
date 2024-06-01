@@ -16,7 +16,7 @@ const Transition = ({ children }) => {
       y: 100,
       transition: {
         delay: 0.5,
-        duration: 0.5
+        duration: 0.5,
       },
     },
   };
@@ -28,7 +28,9 @@ const Transition = ({ children }) => {
       animate="animate"
       exit="exit"
       transition={{
-        duration: 0.5
+        duration: 0.5,
+        type: "spring",
+        stiffness: "150",
       }}
     >
       {children}
