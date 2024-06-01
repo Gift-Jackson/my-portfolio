@@ -19,7 +19,7 @@ const App = () => {
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />
             <Route path="projects" element={<Projects />} />
-            <Route path="*" element={<h1>404 - Page not ready yet!</h1>} />
+            <Route path="*" element={<h1>Chill...Coming Soon!!!😇</h1>} />
           </Route>
         </Routes>
       </AnimatePresence>

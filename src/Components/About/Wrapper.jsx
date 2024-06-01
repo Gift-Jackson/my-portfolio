@@ -28,7 +28,7 @@ const Wrapper = () => {
             responsive web applications. <br /> <br /> My expertise extends to
             modern technologies and frameworks, ensuring that I can deliver
             cutting-edge solutions that meet the needs of today&apos;s digital
-            landscape.
+            landscape. I&apos;m currently learning Nextjs with best practices.🤧
           </p>
 
           <p className={styles.edu}>Education: BSC. in Petroleum Engineering</p>

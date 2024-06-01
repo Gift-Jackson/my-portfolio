@@ -62,3 +62,7 @@ main{
     color: var(--font-color-light);
     font-size: small;
 }
+
+.center{
+    text-align: center;
+}

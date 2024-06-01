@@ -13,7 +13,7 @@ const Hero = () => {
           <p>
             I like to craft solid and scalable frontend products with great user
             experiences and dynamic functionalities from the backend if i&apos;m
-            prompted to.
+            prompted to.😇
           </p>
           <div className={styles.btns}>
             <Link>

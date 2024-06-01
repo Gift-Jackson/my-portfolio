@@ -59,8 +59,9 @@
 
 .btn_2 {
     padding: 1em 2em;
-    background-color: var(--medium-bg);
-    border: 1px solid var(--border);
+    background-color: var(--primary-color);
+    color: var(--white);
+    border:0;
 }
 
 

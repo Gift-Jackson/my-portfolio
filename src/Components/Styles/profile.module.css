@@ -23,3 +23,9 @@
 .img_box img{
     height: 100%;
 }
+.content{
+    text-align: left;
+}
+.content p{
+    display: block;
+}

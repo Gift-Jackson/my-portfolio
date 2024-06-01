@@ -16,7 +16,7 @@ const Transition = ({ children }) => {
       y: 100,
       transition: {
         delay: 0.5,
-        duration: 0.5,
+        duration: 0.5
       },
     },
   };
@@ -30,7 +30,7 @@ const Transition = ({ children }) => {
       transition={{
         duration: 0.5,
         type: "spring",
-        stiffness: "150",
+        stiffness: "150"
       }}
     >
       {children}

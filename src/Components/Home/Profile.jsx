@@ -36,9 +36,8 @@ const Profile = () => {
           <img src={logo} alt="Profile Logo" />
         </div>
         <div className={styles.content}>
-          <h3>Gift Jacksun</h3>
-          <p>
-            <ReactTyped
+          <h3>Gift Jackson</h3>
+          <p><ReactTyped
               strings={[
                 "Frontend Web Developer",
                 "Frontend Mobile App Developer",
@@ -48,8 +47,7 @@ const Profile = () => {
               typeSpeed={50}
               backSpeed={30}
               loop
-            />
-          </p>
+            /></p>
         </div>
       </motion.div>
     </div>

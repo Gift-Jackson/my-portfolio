@@ -6,7 +6,7 @@ const Projects = () => {
     document.title = "My Projects"
   return (
       <>
-          <Title title="Projects" subtitle="Some cool projects I've worked on..." />
+          <Title title="Projects" icon="business_center" subtitle="Some cool projects I've worked on..." />
           <ProjectWrapper/>
           <ForwardButton name="Blog" path="/blog"/>
       </>
