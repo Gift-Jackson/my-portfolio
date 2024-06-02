@@ -12,8 +12,11 @@
     border-radius: .5em;
     overflow: hidden;
     transition: .2s;
+    display: flex;
+    flex-direction: column;
 }
 .item:hover{
+    background-color: var(--medium-bg);
     transform: translateY(-10px) scale(1.02);
 }
 .item:nth-of-type(4){
@@ -50,10 +53,13 @@
     border-radius: 1em;
 }
 .btns{
-    margin-top: 1em;
     display: flex;
     align-items: center;
     gap: .5em;
+    margin-block-start: 1em;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 1em;
 }
 .btns a{
     padding: .5em 1em;

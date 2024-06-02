@@ -20,19 +20,19 @@ const ProjectsCard = ({
             <li key={index}>#{tech}</li>
           ))}
         </ul>
-        <div className={styles.btns}>
-          {live_link && (
-            <a href={live_link} target="_blank" className={styles.btn_1}>
+      </div>
+      <div className={styles.btns}>
+        {live_link && (
+            <a href={live_link} className={styles.btn_1} target="_blank">
               Live demo &nbsp;{" "}
               <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
-          )}
-          {github && (
-            <a href={github} target="_blank" className={styles.btn_2}>
+        )}
+        {github && (
+            <a href={github} className={styles.btn_2} target="_blank">
               GitHub &nbsp; <i className="fa-brands fa-github-alt"></i>
             </a>
-          )}
-        </div>
+        )}
       </div>
     </motion.li>
   );

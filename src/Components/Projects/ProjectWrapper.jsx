@@ -9,18 +9,18 @@ const ProjectWrapper = () => {
   const projects = [
     {
       image: project_1,
-      title: "Real Estate Website",
+      title: "Fox Properties",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
+        "Fox Properties is a modern real estate website I developed using Willow API, HTML, CSS, and JavaScript. It features comprehensive property listings, advanced search functionality, and interactive maps. The user-friendly, responsive design ensures a seamless experience, while real-time data integration offers up-to-date market insights and personalized recommendations.",
       stack: ["HTML", "CSS", "Vanillajs", "Axios"],
       live_link: "https://foxproperties.netlify.app/",
       github: "https://github.com/Gift-Jackson/fox-properties",
     },
     {
       image: project_2,
-      title: "Fintech (VTU website)",
+      title: "QuestPay",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
+        "QuestPay is a fintech web app I developed using React.js and Tailwind CSS, integrating multiple APIs for robust functionality. With QuestPay, users can easily pay bills such as cable subscriptions and electricity, purchase airtime and data at competitive rates, and conduct crypto transactions efficiently.",
       stack: ["Reactjs", "Tailwindcss", "Axios"],
       live_link: "https://questpaylite.netlify.app/",
     },
@@ -28,8 +28,8 @@ const ProjectWrapper = () => {
       image: project_3,
       title: "Online Bookstore",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
-      stack: ["Reactjs", "CSS", "Axios"],
+        "EGLS, which stands for Exceeding Glory Learning System, is an online bookstore developed using ReactJS and the Google Books API.It allows users to search for and access a wide range of books, articles, and papers by entering the book title or author&apos;s name.",
+      stack: ["Reactjs", "CSS", "Axios", "Zustand"],
       live_link: "https://egls-onlinestore.netlify.app/",
       github: "https://github.com/Gift-Jackson/egls-react",
     },
@@ -37,8 +37,8 @@ const ProjectWrapper = () => {
       image: project_4,
       title: "My Portfolio",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta vitae provident, expedita ex sint!",
-      stack: ["Reactjs", "CSS", "Axios"],
+        "My portfolio website, developed using React.js, features a dynamic backend powered by Appwrite. This setup allows me to easily add new projects through a dedicated admin section, ensuring my portfolio stays current and showcases my latest work effectively.",
+      stack: ["Reactjs", "CSS", "Appwrite"],
       live_link: "https://giftjacksun-02.netlify.app/",
       github: "https://github.com/Gift-Jackson/my-portfolio",
     },

@@ -38,7 +38,7 @@
 }
 .links:hover i, .links:hover span{
     color: var(--font-color);
-    filter: drop-shadow(0 0 10px var(--font-color));
+    filter: drop-shadow(0 0 30px var(--font-color));
 }
 .links a{
     display: flex;
