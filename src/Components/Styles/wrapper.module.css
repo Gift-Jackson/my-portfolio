@@ -81,6 +81,10 @@
     align-items: center;
     flex-direction: column;
     padding: .5em;
+    transition: .2s;
+}
+.grid>div:hover{
+    transform:translateY(-10px) scale(1.05);
 }
 
 .grid p {
