@@ -31,7 +31,7 @@ const Wrapper = () => {
             landscape. I&apos;m currently learning Nextjs with best practices.🤧
           </p>
 
-          <p className={styles.edu}>Education: BSC. in Petroleum Engineering</p>
+          <p className={styles.edu}>Education: B.Tech. in Petroleum Engineering</p>
 
           <Link to="/contacts">
             <button className={styles.btn}>
